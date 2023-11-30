@@ -1,0 +1,55 @@
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1 span {
+    color: chocolate;
+}
+
+.col-3,
+.col-02 {
+    background-color: tomato;
+    padding: .5em;
+}
+
+.col-1,
+.col-3,
+.col-02 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-01 {
+    width: 75%;
+}
