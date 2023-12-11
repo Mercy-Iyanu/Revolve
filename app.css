@@ -20,10 +20,24 @@ body {
     margin: 1em 0;
 }
 
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-01,
+    .col-02 {
+        width: 100%;
+    }
+}
+
 h1 {
     color: black;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -43,13 +57,13 @@ h1 span {
 .col-1,
 .col-3,
 .col-02 {
-    width: 25%;
+    width: 20%;
 }
 
 .col-2 {
-    width: 50%;
+    width: 45%;
 }
 
 .col-01 {
-    width: 75%;
+    width: 70%;
 }
