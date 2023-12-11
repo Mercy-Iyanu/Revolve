@@ -20,20 +20,6 @@ body {
     margin: 1em 0;
 }
 
-@media (max-width: 600px) {
-    .columns {
-        flex-direction: column;
-    }
-
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-01,
-    .col-02 {
-        width: 100%;
-    }
-}
-
 h1 {
     color: black;
     text-align: center;
@@ -66,4 +52,18 @@ h1 span {
 
 .col-01 {
     width: 70%;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-01,
+    .col-02 {
+        width: 100%;
+    }
 }
