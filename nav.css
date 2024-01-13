@@ -4,19 +4,36 @@ body {
 }
 
 .container {
-    text-align: center;
-    padding: 2em 0;
-    background: #f8f8f8;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.header-title {
-    line-height: .5em;
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+header {
+    padding: 2em 0;
+    background: #f8f8f8;
 }
 
 .header-title h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
     color: #143774;
+    margin: 0;
 }
 
 .header-title p {
@@ -33,8 +50,18 @@ nav ul {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: .5rem 0;
+    }
+}
+
 nav ul li {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 nav ul li a {
